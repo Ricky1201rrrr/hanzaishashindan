@@ -160,7 +160,7 @@ const resultTypes = {
     behavior: "迷うくらいなら動いてから考える。静かな場面ほど、何か起こしたくなる傾向。",
     role: "起爆剤 / トリックスター / 最初に動く者"
   },
-  "喝采飢餓体": {
+  "迷惑系YouTuberタイプ": {
     catch: "見られない舞台では、本気になれない。",
     description: "人の反応や注目がエネルギーになるタイプ。存在感を示せる場で強く、印象に残るふるまいを自然に選びやすい傾向があります。",
     strengths: "華がある / 自己演出が上手い / 空気をつかむのが得意",
@@ -168,7 +168,7 @@ const resultTypes = {
     behavior: "どう見えるかを無意識に考え、視線が集まる場ほどギアが上がる。",
     role: "カリスマ / 表舞台の悪役 / 劇場型ライバル"
   },
-  "執着の追跡者": {
+  "ストーカータイプ": {
     catch: "気になったものを、簡単には手放さない。",
     description: "一度意識した対象を深く長く追い続ける集中型タイプ。広く浅くより、狭く深くに強く、変化や違和感にも敏感です。",
     strengths: "集中力が高い / 継続力がある / 細部に強い",
@@ -176,7 +176,7 @@ const resultTypes = {
     behavior: "納得できるまで調べる、追う、考える。人や物事の細部をよく拾う。",
     role: "追跡者 / 執念深いライバル / 忠実な執行者"
   },
-  "支配の脚本家": {
+  "尊師タイプ": {
     catch: "舞台の上より、舞台そのものを動かしたい。",
     description: "主導権や展開設計に強く惹かれるタイプ。人の動きや場の構造を読み、全体の流れを組み立てることに満足感を覚えやすいです。",
     strengths: "戦略性が高い / 先読みが得意 / 全体を見渡せる",
@@ -184,7 +184,7 @@ const resultTypes = {
     behavior: "会話や流れを設計し、自分の予測通りに展開が進むと快感を覚える。",
     role: "黒幕 / 参謀 / 盤面の管理者"
   },
-  "冷笑の観測者": {
+  "隠れた黒幕タイプ": {
     catch: "熱狂の輪に入るより、一歩引いて見ていたい。",
     description: "感情に飲まれず、距離を取って全体を見るタイプ。矛盾やズレ、人の演技や本音の揺れに気づきやすく、静かな鋭さを持っています。",
     strengths: "客観的 / 観察眼がある / 異変に気づきやすい",
@@ -192,7 +192,7 @@ const resultTypes = {
     behavior: "盛り上がる場ほど一歩引き、心の中では静かにツッコミを入れている。",
     role: "観察者 / 毒舌参謀 / 真相を知る傍観者"
   },
-  "破滅の希求者": {
+  "不倫議員タイプ": {
     catch: "安全すぎる正解より、危うい魅力に惹かれる。",
     description: "安定より刺激、予定調和より振れ幅に魅力を感じやすいタイプ。少し危うい展開に、強い美しさやドラマを見出す傾向があります。",
     strengths: "熱量が高い / 印象に残る / 感情表現が強い",
@@ -200,7 +200,7 @@ const resultTypes = {
     behavior: "無難な正解では満足できず、どこかで“揺れる展開”を欲しがる。",
     role: "悲劇の中心 / 破滅型ライバル / 危険な魅力担当"
   },
-  "掠奪の反射神経": {
+  "万引き犯タイプ": {
     catch: "“今しかない”を見つけると、最速で手が伸びる。",
     description: "チャンスや抜け道への反応が非常に速い瞬発型。善悪より先に『取れるか』『勝てるか』に意識が向きやすく、勝負の勘に優れています。",
     strengths: "判断が速い / 機転が利く / 勝負所に強い",
@@ -208,7 +208,7 @@ const resultTypes = {
     behavior: "迷っている間に先に押さえる。競争の空気になると急に強くなる。",
     role: "奪取役 / 現場のエース / 瞬発型ライバル"
   },
-  "虚飾の拡声器": {
+  "虚言癖タイプ": {
     catch: "本音そのものより、“映える物語”を増幅させる。",
     description: "事実そのものより、伝わり方や印象の設計が得意なタイプ。少し盛る、魅せる、空気を作ることにセンスがあり、話題性を生みやすいです。",
     strengths: "発信力が高い / 言葉に勢いがある / 印象操作が上手い",
@@ -216,7 +216,7 @@ const resultTypes = {
     behavior: "静かな事実よりも、誰かの記憶に残る見せ方を選びがち。",
     role: "広報役 / 扇動者 / 語り部"
   },
-  "挑発の点火役": {
+  "挑発の点火役タイプ": {
     catch: "静かな空気を見ると、つい火花を散らしたくなる。",
     description: "平穏を少し揺らし、人の感情や場の均衡を動かすことに妙なセンスを持つタイプ。悪意というより、反応を見たい好奇心が先に立つこともあります。",
     strengths: "場を動かせる / 反応を引き出すのが上手い / 刺激を作れる",
@@ -224,7 +224,7 @@ const resultTypes = {
     behavior: "少し攻めた一言や揺さぶりを入れて、空気の変化を楽しみやすい。",
     role: "煽り役 / 攪乱者 / 会話のトリックスター"
   },
-  "暗躍の細工師": {
+  "特殊詐欺師タイプ": {
     catch: "正面突破より、水面下で仕込む方が得意。",
     description: "表立って主張するより、裏で準備し、見えない場所から流れを変えることを好むタイプ。細かな仕込みや工夫で有利を作る知性派です。",
     strengths: "準備が上手い / 器用 / 目立たず成果を出せる",
@@ -365,31 +365,31 @@ function getResultType(scoreMap) {
   const secondary = sorted[1][0];
 
   if (primary === "impulse" && secondary === "chaos") return "通り魔タイプ";
-  if (primary === "impulse" && secondary === "control") return "掠奪の反射神経";
+  if (primary === "impulse" && secondary === "control") return "万引き犯タイプ";
   if (primary === "impulse" && secondary === "performance") return "通り魔タイプ";
-  if (primary === "impulse" && secondary === "obsession") return "掠奪の反射神経";
+  if (primary === "impulse" && secondary === "obsession") return "万引き犯タイプ";
 
-  if (primary === "performance" && secondary === "control") return "喝采飢餓体";
-  if (primary === "performance" && secondary === "chaos") return "虚飾の拡声器";
-  if (primary === "performance" && secondary === "impulse") return "喝采飢餓体";
-  if (primary === "performance" && secondary === "obsession") return "虚飾の拡声器";
+  if (primary === "performance" && secondary === "control") return "迷惑系YouTuberタイプ";
+  if (primary === "performance" && secondary === "chaos") return "虚言癖タイプ";
+  if (primary === "performance" && secondary === "impulse") return "迷惑系YouTuberタイプ";
+  if (primary === "performance" && secondary === "obsession") return "虚言癖タイプ";
 
-  if (primary === "obsession" && secondary === "control") return "冷笑の観測者";
-  if (primary === "obsession" && secondary === "chaos") return "執着の追跡者";
-  if (primary === "obsession" && secondary === "performance") return "執着の追跡者";
-  if (primary === "obsession" && secondary === "impulse") return "執着の追跡者";
+  if (primary === "obsession" && secondary === "control") return "隠れた黒幕タイプ";
+  if (primary === "obsession" && secondary === "chaos") return "ストーカータイプ";
+  if (primary === "obsession" && secondary === "performance") return "ストーカータイプ";
+  if (primary === "obsession" && secondary === "impulse") return "ストーカータイプ";
 
-  if (primary === "control" && secondary === "performance") return "支配の脚本家";
-  if (primary === "control" && secondary === "obsession") return "暗躍の細工師";
-  if (primary === "control" && secondary === "impulse") return "支配の脚本家";
-  if (primary === "control" && secondary === "chaos") return "暗躍の細工師";
+  if (primary === "control" && secondary === "performance") return "尊師タイプ";
+  if (primary === "control" && secondary === "obsession") return "特殊詐欺師タイプ";
+  if (primary === "control" && secondary === "impulse") return "尊師タイプ";
+  if (primary === "control" && secondary === "chaos") return "特殊詐欺師タイプ";
 
-  if (primary === "chaos" && secondary === "performance") return "挑発の点火役";
-  if (primary === "chaos" && secondary === "impulse") return "破滅の希求者";
-  if (primary === "chaos" && secondary === "control") return "挑発の点火役";
-  if (primary === "chaos" && secondary === "obsession") return "破滅の希求者";
+  if (primary === "chaos" && secondary === "performance") return "挑発の点火役タイプ";
+  if (primary === "chaos" && secondary === "impulse") return "不倫議員タイプ";
+  if (primary === "chaos" && secondary === "control") return "挑発の点火役タイプ";
+  if (primary === "chaos" && secondary === "obsession") return "不倫議員タイプ";
 
-  return "冷笑の観測者";
+  return "隠れた黒幕タイプ";
 }
 
 function renderResult(resultName, scoreMap) {
