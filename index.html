@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>裏人格診断 | ダークな本音を暴く10タイプ診断</title>
+  <meta
+    name="description"
+    content="15問に答えるだけで、あなたの裏人格を10タイプで診断。ダークファンタジー風の演出で楽しむフィクション診断コンテンツ。"
+  />
+  <meta property="og:title" content="裏人格診断" />
+  <meta
+    property="og:description"
+    content="15問でわかる、あなたの裏人格。衝動の火種？ 支配の脚本家？ 虚飾の拡声器？"
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta name="theme-color" content="#0b0b12" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <main class="container">
+    <section id="top-screen" class="screen active">
+      <div class="hero-card">
+        <p class="eyebrow">DARK FICTION DIAGNOSIS</p>
+        <h1>裏人格診断</h1>
+        <p class="lead">
+          15問で暴かれる、あなたの“表には出しにくい側面”。<br />
+          これはMBTI風の体験を参考にした、独自のフィクション診断です。
+        </p>
+
+        <div class="notice">
+          <p>
+            ※この診断は娯楽目的のフィクションです。<br />
+            実在の犯罪・暴力・違法行為・迷惑行為を肯定、推奨、正当化するものではありません。<br />
+            医学・心理学・MBTI等の正式な診断ではありません。
+          </p>
+        </div>
+
+        <div class="hero-points">
+          <div class="point">
+            <span class="point-label">質問数</span>
+            <span class="point-value">15問</span>
+          </div>
+          <div class="point">
+            <span class="point-label">結果</span>
+            <span class="point-value">10タイプ</span>
+          </div>
+          <div class="point">
+            <span class="point-label">所要時間</span>
+            <span class="point-value">約2分</span>
+          </div>
+        </div>
+
+        <button id="start-btn" class="primary-btn">診断を始める</button>
+      </div>
+    </section>
+
+    <section id="quiz-screen" class="screen">
+      <div class="quiz-card">
+        <div class="quiz-header">
+          <div class="progress-row">
+            <span id="progress-text">Q1 / 15</span>
+            <span id="progress-percent">0%</span>
+          </div>
+          <div class="progress-bar">
+            <div id="progress-fill" class="progress-fill"></div>
+          </div>
+        </div>
+
+        <div class="question-box">
+          <p class="question-number" id="question-number">QUESTION 1</p>
+          <h2 id="question-text">ここに質問が入ります</h2>
+        </div>
+
+        <div id="options-container" class="options-container"></div>
+
+        <div class="quiz-footer">
+          <button id="back-btn" class="sub-btn">戻る</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="result-screen" class="screen">
+      <div class="result-card">
+        <p class="eyebrow">YOUR DARK SIDE</p>
+        <h2 id="result-type-name">結果タイプ</h2>
+        <p id="result-catch" class="result-catch">ここに一言説明</p>
+
+        <div class="result-summary">
+          <div class="summary-block">
+            <span class="summary-label">タイプ概要</span>
+            <p id="result-description"></p>
+          </div>
+
+          <div class="summary-grid">
+            <div class="summary-item">
+              <h3>長所</h3>
+              <p id="result-strengths"></p>
+            </div>
+            <div class="summary-item">
+              <h3>弱点</h3>
+              <p id="result-weaknesses"></p>
+            </div>
+            <div class="summary-item">
+              <h3>行動傾向</h3>
+              <p id="result-behavior"></p>
+            </div>
+            <div class="summary-item">
+              <h3>創作上の役回り</h3>
+              <p id="result-role"></p>
+            </div>
+          </div>
+
+          <div class="axis-block">
+            <h3>裏人格バランス</h3>
+            <div id="axis-bars" class="axis-bars"></div>
+          </div>
+
+          <div class="share-box">
+            <h3>シェア用テキスト</h3>
+            <textarea id="share-text" readonly></textarea>
+            <div class="share-actions">
+              <button id="copy-btn" class="primary-btn small">結果をコピー</button>
+              <button id="retry-btn" class="sub-btn small">もう一度診断する</button>
+            </div>
+          </div>
+
+          <div class="notice result-notice">
+            <p>
+              ※この結果はフィクション演出としての娯楽表現です。現実の性格、人格、医療・心理学的特性を断定するものではありません。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
